@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XR 白內障模擬系統 | LEE YUN PING</title>
+  <link rel="stylesheet" href="project-pages.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand" href="index.html">LEE YUN PING</a>
+      <nav class="topnav">
+        <a href="index.html">回首頁</a>
+        <a href="project-jijifujiji.html">上一個專案</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell">
+        <article class="hero-card">
+          <div>
+            <span class="eyebrow">Project 03</span>
+            <h1><span class="project-prefix">專案 -</span>XR 白內障模擬系統</h1>
+            <p class="hero-subtitle">
+              這個專案的目標，是透過 XR 場景與多模態回饋，模擬白內障患者在真實環境中的行走體驗，讓使用者更具體感受到導航回饋與沉浸式互動設計的差異。它補強了我在研究、互動設計、系統整合與跨域協作上的完整能力。
+            </p>
+            <ul class="tag-list">
+              <li>#XR</li>
+              <li>#HCI</li>
+              <li>#SystemIntegration</li>
+              <li>#ProjectLead</li>
+              <li>#LLM</li>
+              <li>#AIAgent</li>
+              <li>#MCP</li>
+            </ul>
+            <nav class="page-nav">
+              <a href="#problem">問題內容</a>
+              <a href="#system">功能與系統</a>
+              <a href="#achievement">專案成就</a>
+              <a href="#role">我的負責內容</a>
+              <a href="#reflection">小心得</a>
+              <a href="#gallery">圖片紀錄</a>
+            </nav>
+          </div>
+          <div class="hero-facts">
+            <div class="hero-cover">
+              <img src="assets/slides/slide-13.png" alt="XR 白內障模擬系統總覽" />
+            </div>
+            <div class="fact">
+              <span class="fact-label">專案類型</span>
+              <span class="fact-value">XR / HCI / HRI Interactive System</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">技術焦點</span>
+              <span class="fact-value">Unity、Arduino、Haptic Feedback、Real-time Loop</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">重點能力</span>
+              <span class="fact-value">軟硬整合 / 感測判斷 / 互動設計 / 跨域協作</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="problem">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>問題內容</h2></div>
+          <p>這一區先說清楚專案想模擬什麼，讓讀者理解它不是單純做裝置，而是在處理一個體驗設計與感知理解問題。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>專案背景</h3>
+            <p>
+              白內障患者在真實環境中的移動，不只是視覺模糊而已，還會連帶影響對方向、障礙與導航回饋的理解。因此，我們希望用 XR 與即時回饋設計，把這種感知落差轉成可被體驗與研究的互動情境。
+            </p>
+          </article>
+          <article class="panel">
+            <h3>核心痛點</h3>
+            <ol class="section-list">
+              <li>一般人很難具體理解白內障視角下的移動困難。</li>
+              <li>導航提示若只依賴單一感官，沉浸感與理解度有限。</li>
+              <li>要讓系統在真實互動裡即時判斷並回饋，整合難度高。</li>
+            </ol>
+            <ul class="tag-list">
+              <li>Immersive Experience</li>
+              <li>Assistive Navigation</li>
+              <li>Multi-modal Feedback</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="system">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>功能與系統</h2></div>
+          <p>把 XR 場景、感測與回饋模組分開說明，讀者會更容易看出這是一個完整互動系統。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>主要功能</h3>
+            <ol class="section-list">
+              <li>以 Unity 建立 XR 場景，模擬視覺限制。</li>
+              <li>結合 Meta 頭盔與 Unity 建立沉浸式互動實驗環境。</li>
+              <li>以 Arduino 穿戴式系統在腰部或手臂提供外力控制與觸覺回饋。</li>
+              <li>在 Unity 場景發生碰撞時，即時偵測方向並做反方向拉回。</li>
+              <li>讓整個互動回饋流程保持連續、即時且自然。</li>
+            </ol>
+          </article>
+          <article class="panel">
+            <h3>系統設計思路</h3>
+            <p>
+              整體流程是感測、判斷、回饋的 real-time loop。感測端取得碰撞或環境資訊後，系統要即時判斷當前情況，再透過觸覺與音訊回饋引導使用者，確保互動不是分離的，而是連續的體驗流。
+            </p>
+          </article>
+        </div>
+        <article class="panel diagram-panel">
+          <h3>系統流程圖</h3>
+          <div class="zoomable-diagram" aria-label="XR 白內障模擬系統流程圖">
+            <div class="mermaid">
+flowchart TD
+    A["Meta Headset + Unity XR Environment"] --> B["Immersive Visual Impairment Simulation"]
+    B --> C["User Movement in XR Scene"]
+    C --> D["Collision / Direction Detection in Unity"]
+    D --> E["Signal to Arduino Wearable System"]
+    E --> F["Waist / Arm Force Feedback"]
+    F --> G["Reverse Pull / Physical Guidance"]
+    G --> H["Smooth Interactive Adjustment"]
+    H --> C
+            </div>
+            <span class="diagram-hint">點擊流程圖可放大檢視</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievement">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>專案成就</h2></div>
+          <p>這裡不一定只放比賽名次，也可以強調這個專案在互動研究與系統整合上的成果。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>具體成果</h3>
+            <ol class="achievement-list">
+              <li>完成 XR 場景與感測裝置的整合原型。</li>
+              <li>建立視覺限制、碰撞偵測、方向判斷與穿戴式外力回饋的完整互動流程。</li>
+              <li>把輔助導航議題轉成可體驗、可展示的互動系統。</li>
+            </ol>
+          </article>
+          <article class="achievement-highlight">
+            <strong>這個成果代表什麼</strong>
+            這代表我不只會做軟體頁面或資料系統，也具備處理硬體互動、即時回饋與人機互動情境的能力。
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="role">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>我在專案中的負責內容</h2></div>
+          <p>這裡把你的軟硬整合角色明確寫出來。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>我負責的部分</h3>
+            <ol class="responsibility-list">
+              <li>軟硬體整合。</li>
+              <li>Arduino 開發與感測互動處理。</li>
+              <li>協助把各模組串成完整 real-time loop。</li>
+              <li>以專案組長角色推進分工、整合展示內容與團隊協作節奏。</li>
+            </ol>
+          </article>
+          <article class="panel">
+            <h3>能力展現</h3>
+            <p>
+              這個專案最能呈現我的跨域整合能力。因為它不是單一技術就能完成，而是需要把場景、裝置、感測、使用者體驗與團隊協作放在一起考量，才能讓系統真的可用。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflection">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>小心得</h2></div>
+          <p>這一段讓頁面更能體現你在 HCI / HRI 方向上的思考。</p>
+        </div>
+        <article class="panel">
+          <p class="quote">
+            這個專案讓我學到，互動設計真正重要的地方不是把技術堆上去，而是回到使用者怎麼感受、怎麼理解、怎麼被引導。當系統回饋是即時而且有感的時候，技術才真正變成體驗。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>圖片紀錄</h2></div>
+          <p>把裝置、原型與團隊紀錄集中放這裡，視覺會比擠在首頁更清楚。</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="assets/slides/slide-13.png" alt="XR 白內障模擬系統總覽" />
+            <figcaption>XR 白內障模擬系統架構與互動流程總覽。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/23.jpg" alt="XR 穿戴裝置設計" />
+            <figcaption>XR 穿戴式裝置與模組配置。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/25.jpg" alt="XR 穿戴式裝置實穿" />
+            <figcaption>穿戴式裝置實際上身與互動狀態。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/24.jpg" alt="XR 團隊照片" />
+            <figcaption>專案團隊與系統展示紀錄。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <a href="index.html">回到首頁</a>
+  </footer>
+  <div class="diagram-modal" data-diagram-modal>
+    <div class="diagram-modal-backdrop" data-diagram-modal-close></div>
+    <div class="diagram-modal-card" data-diagram-modal-content></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="project-pages.js"></script>
+</body>
+</html>

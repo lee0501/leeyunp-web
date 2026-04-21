@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>集集復集集 數位化第三方集點平台 | LEE YUN PING</title>
+  <link rel="stylesheet" href="project-pages.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand" href="index.html">LEE YUN PING</a>
+      <nav class="topnav">
+        <a href="index.html">回首頁</a>
+        <a href="project-budget-manager.html">上一個專案</a>
+        <a href="project-xr-cataract.html">下一個專案</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell">
+        <article class="hero-card">
+          <div>
+            <span class="eyebrow">Project 02</span>
+            <h1><span class="project-prefix">專案 -</span>集集復集集 數位化第三方集點平台</h1>
+            <p class="hero-subtitle">
+              這個專案希望解決小型店家在集點與會員經營上的數位化門檻，讓使用者端與店家端都能用更低成本的方式管理點數、互動紀錄與客服需求。它同時結合平台產品思維、系統整合、商業流程與使用者經營視角。
+            </p>
+            <ul class="tag-list">
+              <li>#PlatformProduct</li>
+              <li>#B2B2C</li>
+              <li>#CommercialOperations</li>
+              <li>#ProjectLead</li>
+              <li>#LLM</li>
+              <li>#AIAgent</li>
+              <li>#MCP</li>
+            </ul>
+            <nav class="page-nav">
+              <a href="#problem">問題內容</a>
+              <a href="#system">功能與系統</a>
+              <a href="#achievement">專案成就</a>
+              <a href="#role">我的負責內容</a>
+              <a href="#reflection">小心得</a>
+              <a href="#gallery">圖片紀錄</a>
+            </nav>
+          </div>
+          <div class="hero-facts">
+            <div class="hero-cover">
+              <img src="assets/slides/slide-10.png" alt="集點平台專案總覽" />
+            </div>
+            <div class="fact">
+              <span class="fact-label">專案類型</span>
+              <span class="fact-value">B2C / B2B Service Platform / Commercial Operations</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">技術焦點</span>
+              <span class="fact-value">LineBot、Firebase、RESTful API、LLM Fallback、Point Flow</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">成果</span>
+              <span class="fact-value">競賽第一名 / U-Start / 對外發表</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="problem">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>問題內容</h2></div>
+          <p>先釐清這個平台為什麼值得做，讓讀者知道你處理的是一個很具體的商業與使用者流程問題。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>專案背景</h3>
+            <p>
+              傳統集點常常依賴紙本卡或分散在多個 App 裡，不只使用者不好管理，店家也很難追蹤實際使用狀況。對小型攤商來說，要自己建立一套完整數位系統通常成本太高。
+            </p>
+            <p>
+              因此，專案的目標是打造一個低門檻的第三方集點平台，讓店家可以用更簡單的方式進入數位化，也讓消費者有一致的使用體驗，進一步支撐商家會員經營與回流機制。
+            </p>
+          </article>
+          <article class="panel">
+            <h3>核心痛點</h3>
+            <ol class="section-list">
+              <li>紙本集點與多 App 並存，造成管理混亂。</li>
+              <li>小型店家缺乏自己建置平台的資源與技術能力。</li>
+              <li>點數查詢、轉贈、折抵與客服問題沒有被整合。</li>
+            </ol>
+            <ul class="tag-list">
+              <li>Point Flow</li>
+              <li>Merchant Digitization</li>
+              <li>Customer Service</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="system">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>功能與系統</h2></div>
+          <p>這區把平台怎麼運作寫清楚，尤其是雙系統結構與混合客服邏輯，這是很重要的亮點。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>主要功能</h3>
+            <ol class="section-list">
+              <li>使用者端與店家端雙系統。</li>
+              <li>支援點數累積、查詢、轉贈與折抵。</li>
+              <li>外部整合 LineBot 與 Google Maps API。</li>
+              <li>客服邏輯結合 rule-based 與 LLM fallback。</li>
+            </ol>
+          </article>
+          <article class="panel">
+            <h3>系統設計思路</h3>
+            <p>
+              我們把平台分成 B2C 與 B2B 兩側，並用 Firebase 作為即時資料儲存。對於高確定性的查詢，例如點數與紀錄，優先交給 rule-based 處理；對模糊問題則由 LLM 作為 fallback，兼顧效率與彈性。
+            </p>
+            <p>
+              這樣的設計讓平台不只是一個資料庫，而是一套真正能支撐互動、會員營運與未來擴充的服務架構。
+            </p>
+          </article>
+        </div>
+        <article class="panel diagram-panel">
+          <h3>系統流程圖</h3>
+          <div class="zoomable-diagram" aria-label="集點平台系統流程圖">
+            <div class="mermaid">
+flowchart TD
+    A["Platform Entry"] --> B["B2C Consumer Side"]
+    A --> C["B2B Merchant Side"]
+    B --> B1["Google Maps Navigation"]
+    B --> B2["Set Loyalty Card"]
+    B --> B3["Add Friends"]
+    B --> B4["Transfer Points"]
+    B --> B5["View History Records"]
+    C --> C1["Input Purchase Amount"]
+    C1 --> C2["Auto Calculate Earned Points"]
+    C --> C3["Input Discount Points"]
+    C3 --> C4["Auto Calculate Discount Value"]
+    C --> C5["Launch Ads"]
+    C --> C6["Configure Random Bonus Campaigns"]
+    B --> D["Platform Data Layer"]
+    C --> D
+    D --> D1["Firebase Realtime Storage"]
+    D --> E["Customer Service Logic"]
+    E --> E1["Rule-based for Points / Records"]
+    E --> E2["LLM Fallback for Fuzzy Questions"]
+    D1 --> F["Integrated Loyalty Platform Experience"]
+    E1 --> F
+    E2 --> F
+            </div>
+            <span class="diagram-hint">點擊流程圖可放大檢視</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievement">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>專案成就</h2></div>
+          <p>把競賽與對外發表集中整理，讓讀者直接理解這個專案的成熟度與外部認可。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>具體成果</h3>
+            <ol class="achievement-list">
+              <li>第 28 屆資訊應用服務創新競賽產學合作組第一名。</li>
+              <li>創新創業競賽佳作。</li>
+              <li>通過 U-Start 大學生計劃。</li>
+              <li>受邀於友達光電、台北市電腦公會等場合對外發表。</li>
+            </ol>
+          </article>
+          <article class="achievement-highlight">
+            <strong>這個成果代表什麼</strong>
+            這顯示我參與的不是停留在校內報告的作品，而是具備被外部單位理解、評估與肯定的產品化潛力、商業溝通能力與市場展示能力。
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="role">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>我在專案中的負責內容</h2></div>
+          <p>這一塊會讓人清楚知道你負責的不只是開發，也包含流程設計與系統整合。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>我負責的部分</h3>
+            <ol class="responsibility-list">
+              <li>系統流程設計，包括點數流與使用者行為建模。</li>
+              <li>LineBot webhook 與後端整合。</li>
+              <li>rule-based 與 LLM 混合邏輯設計。</li>
+              <li>API 串接、RESTful API 規劃與系統測試。</li>
+              <li>以專案組長角色協調組員分工、整合外部發表內容與對外展示敘事。</li>
+            </ol>
+          </article>
+          <article class="panel">
+            <h3>能力展現</h3>
+            <p>
+              這個專案反映的是我做平台型系統時的能力，不只會做單點功能，而是能把資料流、服務角色、客服流程、API 邏輯與商業流程放在同一個整體架構裡思考。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflection">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>小心得</h2></div>
+          <p>這裡補充你在平台專案裡的學習重點，讓作品更完整。</p>
+        </div>
+        <article class="panel">
+          <p class="quote">
+            這個專案讓我更理解一件事：一個服務是否真的能用，不只是功能有沒有做完，而是流程有沒有被串起來。當使用者端、店家端、點數邏輯與客服互動都被放進同一個架構思考時，系統才真正具備擴展性，也更接近商業現場的需求。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>圖片紀錄</h2></div>
+          <p>把畫面、發表與得獎照片集中在同一區，讓成果呈現更完整。</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="assets/slides/slide-10.png" alt="集點平台總覽" />
+            <figcaption>平台背景、系統架構、客服邏輯與成果總覽。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/slide-11.png" alt="集點平台補充畫面 1" />
+            <figcaption>集點平台補充畫面 1。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/slide-12.png" alt="集點平台補充畫面 2" />
+            <figcaption>集點平台補充畫面 2。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/26.jpg" alt="集點平台發表照片" />
+            <figcaption>專案發表與展示紀錄。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/28.jpg" alt="集點平台競賽得獎照片" />
+            <figcaption>資訊應用服務創新競賽得獎紀錄。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/27.jpg" alt="集點平台創新創業競賽照片" />
+            <figcaption>創新創業競賽與團隊成果紀錄。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <a href="index.html">回到首頁</a>
+  </footer>
+  <div class="diagram-modal" data-diagram-modal>
+    <div class="diagram-modal-backdrop" data-diagram-modal-close></div>
+    <div class="diagram-modal-card" data-diagram-modal-content></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="project-pages.js"></script>
+</body>
+</html>

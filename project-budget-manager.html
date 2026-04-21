@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Manager 智慧決策購物車 | LEE YUN PING</title>
+  <link rel="stylesheet" href="project-pages.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand" href="index.html">LEE YUN PING</a>
+      <nav class="topnav">
+        <a href="index.html">回首頁</a>
+        <a href="project-jijifujiji.html">下一個專案</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell">
+        <article class="hero-card">
+          <div>
+            <span class="eyebrow">Project 01</span>
+            <h1><span class="project-prefix">專案 -</span>Budget Manager 智慧決策購物車</h1>
+            <p class="hero-subtitle">
+              這個專案的核心目標，是協助使用者在資訊量過多、促銷規則複雜、預算有限的情境下，快速找出更合理的購買策略。它不只是 AI 應用，也是一個結合商業邏輯、流程設計與商用系統思維的決策支援專案。
+            </p>
+            <ul class="tag-list">
+              <li>#DecisionSupport</li>
+              <li>#CommercialSystem</li>
+              <li>#ProductFlow</li>
+              <li>#ProjectLead</li>
+              <li>#LLM</li>
+              <li>#AIAgent</li>
+              <li>#MCP</li>
+            </ul>
+            <nav class="page-nav">
+              <a href="#problem">問題內容</a>
+              <a href="#system">功能與系統</a>
+              <a href="#achievement">專案成就</a>
+              <a href="#role">我的負責內容</a>
+              <a href="#reflection">小心得</a>
+              <a href="#gallery">圖片紀錄</a>
+            </nav>
+          </div>
+          <div class="hero-facts">
+            <div class="hero-cover">
+              <img src="assets/slides/slide-03.png" alt="Budget Manager 專案總覽" />
+            </div>
+            <div class="fact">
+              <span class="fact-label">專案類型</span>
+              <span class="fact-value">Decision Support / Commercial System / Shopping Experience</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">技術焦點</span>
+              <span class="fact-value">Semantic Mapping、LLM Integration、Rule Logic、Flow Design</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">成果</span>
+              <span class="fact-value">創業競賽佳作 / Meet Taipei 發表</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="problem">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>問題內容</h2></div>
+          <p>這一頁先把專案為什麼要做說清楚，讓讀者先理解問題，再往下看功能與系統設計。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>專案背景</h3>
+            <p>
+              線上購物的資訊量很大，折扣、組合優惠、支付方式、點數回饋與預算條件會互相影響。使用者明明有購買意圖，卻常常因為不知道哪個方案最好而放棄結帳。
+            </p>
+            <p>
+              我們想處理的，不只是「推薦商品」，而是幫使用者做「購買決策整理」，讓系統能理解需求、整理條件，最後給出有邏輯的建議。
+            </p>
+          </article>
+          <article class="panel">
+            <h3>核心痛點</h3>
+            <ol class="section-list">
+              <li>使用者不知道在有限預算下該如何配置購物內容。</li>
+              <li>促銷規則與付款方式很複雜，難以直接比較最划算方案。</li>
+              <li>商品很多，但真正困難的是判斷優先順序與購買策略。</li>
+            </ol>
+            <ul class="tag-list">
+              <li>Decision Flow</li>
+              <li>Budget Constraint</li>
+              <li>Promotion Rules</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="system">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>功能與系統</h2></div>
+          <p>這部分聚焦在系統怎麼拆解，讓人可以快速理解你們不是只做聊天機器人，而是有規則、意圖與推薦邏輯的完整流程。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>主要功能</h3>
+            <ol class="section-list">
+              <li>理解使用者需求與購買目標。</li>
+              <li>辨識意圖與商品類別，整理出決策所需資訊。</li>
+              <li>根據預算限制、促銷規則與付款方式做策略判斷。</li>
+              <li>輸出可執行的推薦方案，而不是單一商品清單。</li>
+            </ol>
+          </article>
+          <article class="panel">
+            <h3>系統設計思路</h3>
+            <p>
+              整體流程是由使用者查詢開始，先進入 semantic understanding，再做 intent / product category 的歸納，最後把語意理解結果送進 rule + logic 層，進行預算、促銷與支付最佳化的判斷，輸出推薦結果。
+            </p>
+            <p>
+              這個設計的重點在於把自然語言理解與明確規則邏輯分開，讓系統同時保有彈性與可控性，也更接近真實商用系統需要的可維護性與可擴充性。
+            </p>
+          </article>
+        </div>
+        <article class="panel diagram-panel">
+          <h3>系統流程圖</h3>
+          <div class="zoomable-diagram" aria-label="Budget Manager 系統流程圖">
+            <div class="mermaid">
+flowchart TD
+    A["User Query"] --> B["Semantic Understanding<br/>LLM / Mapping / Simple RAG"]
+    B --> C["Intent / Product Category"]
+    C --> D["Rule + Logic Layer"]
+    D --> D1["Budget Constraint"]
+    D --> D2["Promotion Rules"]
+    D --> D3["Payment Optimization"]
+    D1 --> E["Recommendation Output"]
+    D2 --> E
+    D3 --> E
+            </div>
+            <span class="diagram-hint">點擊流程圖可放大檢視</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievement">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>專案成就</h2></div>
+          <p>這裡把成果直接說出來，讓讀者快速知道這個專案不只是概念，而是真的有被拿出去驗證與發表。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>具體成果</h3>
+            <ol class="achievement-list">
+              <li>114 年新竹青春靚點子學生創業競賽佳作。</li>
+              <li>2025 Meet Taipei 對外發表。</li>
+              <li>完成從需求構想到決策流程設計的實作展示。</li>
+            </ol>
+          </article>
+          <article class="achievement-highlight">
+            <strong>這個成果代表什麼</strong>
+            對外來看，這代表我不只是會做功能，而是能把一個模糊的商業痛點整理成具體系統架構，再把它發展成可展示、可說明、可對外溝通的產品型專案。
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="role">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>我在專案中的負責內容</h2></div>
+          <p>這一區清楚區分你做了什麼，讓人知道你在專案中的實際角色與技術價值。</p>
+        </div>
+        <div class="grid-2">
+          <article class="panel">
+            <h3>我負責的部分</h3>
+            <ol class="responsibility-list">
+              <li>語意 mapping 與 intent 設計。</li>
+              <li>decision flow 的拆解與規劃。</li>
+              <li>LLM integration，包含客服與語意理解方向。</li>
+              <li>系統邏輯整理，把需求轉成可執行的流程。</li>
+              <li>以專案組長角色協調方向、拆解分工，推進團隊把概念收斂成可展示成果。</li>
+            </ol>
+          </article>
+          <article class="panel">
+            <h3>能力展現</h3>
+            <p>
+              這個專案最能反映我的一點，是我很擅長把「需求敘述」轉成「系統流程」。我做的不只是功能點，而是把語意理解、規則判斷與推薦輸出之間的邏輯關係建立起來，並站在產品與商業場景角度思考系統是否真的能被使用。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflection">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>小心得</h2></div>
+          <p>這一段讓頁面不只像作品展示，也能讓人理解你的思考方式。</p>
+        </div>
+        <article class="panel">
+          <p class="quote">
+            我在這個專案裡最大的收穫，是更清楚地理解到：很多 AI 應用真正困難的地方，不是模型本身，而是怎麼把使用者需求、業務邏輯與可解釋的系統流程接起來。這也讓我後來更關注產品落地、專案推進，以及 Agent、Orchestration 與系統層面的設計。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="shell">
+        <div class="section-head">
+          <div><h2>圖片紀錄</h2></div>
+          <p>把專案畫面集中放在最後，讓圖片成為補充理解，而不是把主內容擠在同一頁的同一區塊裡。</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="assets/slides/slide-03.png" alt="Budget Manager 專案總覽" />
+            <figcaption>專案背景、系統設計與成果總覽。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/slide-04.png" alt="Budget Manager 系統畫面 1" />
+            <figcaption>Budget Manager 系統簡介畫面 1。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/slide-05.png" alt="Budget Manager 系統畫面 2" />
+            <figcaption>Budget Manager 系統簡介畫面 2。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/slide-06.png" alt="Budget Manager 系統畫面 3" />
+            <figcaption>Budget Manager 系統簡介畫面 3。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/29.jpg" alt="Budget Manager 發表照片" />
+            <figcaption>Budget Manager 專案發表紀錄。</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/slides/30.jpg" alt="Budget Manager 得獎照片" />
+            <figcaption>專案得獎與團隊合照。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <a href="index.html">回到首頁</a>
+  </footer>
+  <div class="diagram-modal" data-diagram-modal>
+    <div class="diagram-modal-backdrop" data-diagram-modal-close></div>
+    <div class="diagram-modal-card" data-diagram-modal-content></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="project-pages.js"></script>
+</body>
+</html>

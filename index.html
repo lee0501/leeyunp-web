@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>李云平 | 個人專案經歷網站</title>
+  <title>LEE YUN PING | Portfolio</title>
   <style>
     :root {
-      --bg: #f4efe7;
+      --bg: #f5f1ea;
       --bg-soft: #fffaf3;
-      --ink: #1f2937;
-      --muted: #526072;
-      --line: rgba(31, 41, 55, 0.12);
-      --brand: #0f766e;
-      --brand-deep: #0b4f4a;
-      --accent: #d97706;
-      --card: rgba(255, 255, 255, 0.78);
-      --shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+      --ink: #1d2430;
+      --muted: #66707f;
+      --line: rgba(29, 36, 48, 0.12);
+      --brand: #2e4a66;
+      --brand-deep: #21364b;
+      --accent: #b68455;
+      --card: rgba(255, 255, 255, 0.84);
+      --shadow: 0 22px 56px rgba(31, 36, 48, 0.1);
       --radius: 28px;
       --radius-sm: 18px;
       --max: 1180px;
@@ -33,10 +33,10 @@
       margin: 0;
       color: var(--ink);
       background:
-        radial-gradient(circle at top left, rgba(15, 118, 110, 0.12), transparent 28%),
-        radial-gradient(circle at right 10% top 8%, rgba(217, 119, 6, 0.12), transparent 18%),
-        linear-gradient(180deg, #f9f5ef 0%, #f1ebe3 44%, #ece5dc 100%);
-      font-family: "Iowan Old Style", "Palatino Linotype", "Noto Serif TC", serif;
+        radial-gradient(circle at top left, rgba(190, 168, 140, 0.14), transparent 26%),
+        radial-gradient(circle at right 10% top 8%, rgba(122, 141, 158, 0.12), transparent 18%),
+        linear-gradient(180deg, #faf7f2 0%, #f2ede6 44%, #ece6de 100%);
+      font-family: "Avenir Next", "Helvetica Neue", "Noto Sans TC", sans-serif;
       line-height: 1.6;
     }
 
@@ -60,7 +60,8 @@
       top: 0;
       z-index: 20;
       backdrop-filter: blur(18px);
-      background: rgba(16, 18, 27, 0.9);
+      background:
+        linear-gradient(90deg, rgba(31, 36, 48, 0.97), rgba(47, 54, 69, 0.94));
       border-bottom: 1px solid rgba(31, 41, 55, 0.08);
     }
 
@@ -125,6 +126,9 @@
       padding: 44px;
       position: relative;
       overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(182, 132, 85, 0.08), transparent 24%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.88));
     }
 
     .hero-card::before {
@@ -134,7 +138,7 @@
       width: 340px;
       height: 340px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(15, 118, 110, 0.16), transparent 68%);
+      background: radial-gradient(circle, rgba(182, 132, 85, 0.14), transparent 68%);
       pointer-events: none;
     }
 
@@ -144,7 +148,7 @@
       gap: 10px;
       padding: 8px 14px;
       border-radius: 999px;
-      background: rgba(15, 118, 110, 0.08);
+      background: rgba(46, 74, 102, 0.08);
       color: var(--brand-deep);
       font-family: "Avenir Next", "Noto Sans TC", sans-serif;
       font-size: 13px;
@@ -163,14 +167,15 @@
 
     h1 {
       margin-top: 18px;
-      font-size: clamp(42px, 7vw, 80px);
+      font-size: clamp(30px, 4vw, 46px);
       letter-spacing: -0.04em;
     }
 
     .hero-subtitle {
       max-width: 760px;
       margin: 20px 0 0;
-      font-size: 20px;
+      font-size: 17px;
+      line-height: 1.95;
       color: var(--muted);
     }
 
@@ -197,7 +202,7 @@
     .button.primary {
       color: #fff;
       background: linear-gradient(135deg, var(--brand), var(--brand-deep));
-      box-shadow: 0 14px 30px rgba(15, 118, 110, 0.25);
+      box-shadow: 0 12px 26px rgba(33, 54, 75, 0.16);
     }
 
     .button.secondary {
@@ -220,8 +225,9 @@
     }
 
     .panel h3 {
-      font-size: 18px;
+      font-size: 15px;
       margin-bottom: 14px;
+      letter-spacing: 0.02em;
     }
 
     .stat-list,
@@ -276,15 +282,13 @@
     }
 
     .section-head p {
-      margin: 0;
-      max-width: 720px;
-      color: var(--muted);
-      font-family: "Avenir Next", "Noto Sans TC", sans-serif;
+      display: none;
     }
 
     h2 {
       font-size: clamp(28px, 4vw, 46px);
       letter-spacing: -0.03em;
+      text-transform: uppercase;
     }
 
     .grid-2 {
@@ -339,16 +343,18 @@
     .skill-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
       margin-top: 18px;
       font-family: "Avenir Next", "Noto Sans TC", sans-serif;
     }
 
     .skill-tags li {
-      padding: 10px 14px;
+      padding: 7px 12px;
       border-radius: 999px;
-      background: rgba(15, 118, 110, 0.08);
-      color: var(--brand-deep);
+      background: rgba(61, 67, 76, 0.08);
+      color: #49505c;
+      font-size: 13px;
+      letter-spacing: 0.01em;
       font-weight: 700;
     }
 
@@ -381,7 +387,7 @@
     .project-meta span {
       padding: 8px 12px;
       border-radius: 999px;
-      background: rgba(15, 118, 110, 0.08);
+      background: rgba(46, 74, 102, 0.08);
       color: var(--brand-deep);
       font-size: 13px;
       font-weight: 700;
@@ -493,7 +499,7 @@
       padding: 0;
       border: 0;
       border-radius: 999px;
-      background: rgba(15, 118, 110, 0.18);
+      background: rgba(46, 74, 102, 0.18);
       cursor: pointer;
       transition: transform 180ms ease, background-color 180ms ease;
     }
@@ -503,6 +509,72 @@
       transform: scale(1.15);
     }
 
+    .project-overview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .project-entry {
+      display: grid;
+      gap: 18px;
+      padding: 22px;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid rgba(31, 41, 55, 0.08);
+      box-shadow: var(--shadow);
+    }
+
+    .project-entry-media img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 1px solid rgba(31, 41, 55, 0.08);
+      box-shadow: 0 16px 30px rgba(15, 23, 42, 0.09);
+    }
+
+    .project-entry-copy {
+      display: grid;
+      gap: 12px;
+    }
+
+    .project-entry-copy h3 {
+      font-size: 22px;
+    }
+
+    .project-entry-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-family: "Avenir Next", "Noto Sans TC", sans-serif;
+    }
+
+    .project-entry-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-top: 4px;
+      font-family: "Avenir Next", "Noto Sans TC", sans-serif;
+    }
+
+    .project-entry-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+      font-weight: 700;
+      box-shadow: 0 12px 26px rgba(33, 54, 75, 0.16);
+    }
+
+    .project-entry-note {
+      display: none;
+    }
+
     .research-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -510,7 +582,7 @@
     }
 
     .research-card h3 {
-      font-size: 24px;
+      font-size: 18px;
       margin-bottom: 12px;
     }
 
@@ -528,8 +600,8 @@
       padding: 32px;
       border-radius: 34px;
       background:
-        radial-gradient(circle at top left, rgba(45, 212, 191, 0.16), transparent 26%),
-        linear-gradient(135deg, #0f172a 0%, #111827 48%, #0b1220 100%);
+        radial-gradient(circle at top left, rgba(182, 132, 85, 0.14), transparent 26%),
+        linear-gradient(135deg, #202531 0%, #2d3442 48%, #252c38 100%);
       color: #e5eefc;
       box-shadow: 0 28px 80px rgba(15, 23, 42, 0.22);
     }
@@ -581,8 +653,8 @@
       width: fit-content;
       padding: 8px 12px;
       border-radius: 999px;
-      background: rgba(45, 212, 191, 0.12);
-      color: #99f6e4;
+      background: rgba(182, 132, 85, 0.12);
+      color: #f2d6b3;
       font-family: "Avenir Next", "Noto Sans TC", sans-serif;
       font-size: 13px;
       font-weight: 700;
@@ -591,7 +663,7 @@
     }
 
     .credential-copy h3 {
-      font-size: 30px;
+      font-size: 22px;
     }
 
     .credential-copy p {
@@ -662,7 +734,8 @@
       .project-card,
       .research-grid,
       .slides-grid,
-      .credential-card {
+      .credential-card,
+      .project-overview-grid {
         grid-template-columns: 1fr;
       }
 
@@ -709,7 +782,7 @@
 <body>
   <header class="topbar">
     <div class="shell">
-      <a class="brand" href="#top">LEE YUN-PING</a>
+      <a class="brand" href="#top">LEE YUN PING</a>
       <nav class="nav">
         <a href="#about">背景</a>
         <a href="#projects">專案</a>
@@ -725,11 +798,26 @@
       <div class="shell hero-grid">
         <article class="hero-card reveal">
           
+          <span class="eyebrow">LEE YUN PING</span>
           <h1>李云平</h1>
           <p class="hero-subtitle">
-            具備 AI 系統、全端開發、流程設計與人機互動研究背景，專注於把複雜系統需求拆解成可落地的產品流程、資料流與應用架構。<br><br>
-            我目前是國立政治大學數位內容專業的碩士研究生，擁有資訊管理背景和跨學科專案經驗。在近期的專案中，我參與了需求轉換、工作流程設計、API和資料整合、人工智慧輔助邏輯以及原型實現等工作。本網站是我履歷的動態延伸，不僅展示了我建立的項目，也反映了我解決問題和支援技術執行的想法。
+            具備資訊管理、數位內容與跨域專案整合背景，長期累積在系統規劃、產品流程、資料邏輯、AI 應用與互動設計之間的實作經驗。我的優勢不只是能寫程式或完成單一功能，而是能從需求理解出發，整理商業情境、使用者流程、系統架構與執行細節，將抽象想法一步一步轉化成可落地的產品與專案成果。<br><br>
+            在近期專案中，我參與並主導過商用購物決策系統、平台型會員與點數服務、以及 XR 互動研究型系統的規劃與整合。這些經驗讓我能同時站在前後端開發、全端整合、專案推進、產品協作與商業應用的角度思考問題，也讓我更重視溝通、整合與把事情真正做完的能力。
           </p>
+          <ul class="skill-tags">
+            <li>#Frontend</li>
+            <li>#Backend</li>
+            <li>#FullStack</li>
+            <li>#PM</li>
+            <li>#BusinessIntelligence</li>
+            <li>#ProjectLead</li>
+            <li>#SystemDesign</li>
+            <li>#HCI</li>
+            <li>#LLM</li>
+            <li>#AIAgent</li>
+            <li>#MCP</li>
+            <li>#AIApplications</li>
+          </ul>
           <div class="hero-actions">
             <a class="button primary" href="#projects">查看專案經驗</a>
             
@@ -749,19 +837,19 @@
                 <span class="stat-value">4.12 / 4.3</span>
               </li>
               <li>
-                <span class="stat-label">研究主軸</span>
-                <span class="stat-value">AI / HCI / HRI / HAI / Systems</span>
+                <span class="stat-label">跨域特質</span>
+                <span class="stat-value">系統整合 / 專案推進 / 商業理解 / 研究導向</span>
               </li>
             </ul>
           </section>
 
           <section class="panel reveal">
-            <h3>技術能力</h3>
+            <h3>個人摘要</h3>
             <ul class="bullet-list">
-              <li>系統開發設計：API、data flow、architecture</li>
-              <li>全端與資料庫：Vue、React、Python、R、SQL、C#、Java</li>
-              <li>AI 應用：LLM、Agent、MCP、semantic mapping</li>
-              <li>流程優化：CI/CD、automation</li>
+              <li>擅長把需求、流程、資料與系統模組串起來，讓抽象想法變成可執行的成果。</li>
+              <li>在商用系統、平台產品、AI 應用與研究型專案之間都有實際整合經驗。</li>
+              <li>具備專案組長經驗，重視團隊協作、溝通整合與把事情真正推進完成。</li>
+              <li>除了工程實作，也能從使用者情境、商業脈絡與互動設計角度理解問題。</li>
             </ul>
           </section>
         </aside>
@@ -801,18 +889,20 @@
           <article class="panel reveal">
             <h3>專業焦點</h3>
             <ul class="bullet-list">
-              <li>擅長把複雜需求拆成語意理解、意圖辨識、規則邏輯與回應輸出的完整系統鏈。</li>
-              <li>熟悉全端開發與後端串接，能從流程設計一路做到 API 與資料流落地。</li>
-              <li>研究重心結合 AI system robustness、Agent memory、MCP orchestration 與人機互動。</li>
+              <li>能從商業問題出發，拆解成產品流程、資料流、系統模組與執行方案。</li>
+              <li>熟悉前後端串接與全端落地，也能站在 PM 與專案組長角度協調溝通與推進進度。</li>
+              <li>除了技術實作，也重視商用系統思維、使用者流程、決策支援與研究分析能力。</li>
             </ul>
             <ul class="skill-tags">
-              <li>Semantic Mapping</li>
-              <li>LLM Integration</li>
-              <li>RESTful API</li>
-              <li>LineBot Webhook</li>
-              <li>Firebase</li>
-              <li>Unity</li>
-              <li>Arduino</li>
+              <li>#ProductThinking</li>
+              <li>#CommercialSystems</li>
+              <li>#UserFlow</li>
+              <li>#Research</li>
+              <li>#CrossFunctional</li>
+              <li>#Execution</li>
+              <li>#LLM</li>
+              <li>#AIAgent</li>
+              <li>#MCP</li>
             </ul>
           </article>
         </div>
@@ -823,14 +913,16 @@
       <div class="shell">
         <div class="section-head reveal">
           <div>
-            <h2>專案經驗</h2>
+            <h2>專案 - 近年大型專案說明</h2>
           </div>
-          
         </div>
 
-        <div class="project-stack">
-          <article class="panel project-card reveal">
-            <div class="project-copy">
+        <div class="project-overview-grid">
+          <article class="project-entry reveal">
+            <div class="project-entry-media">
+              <img src="assets/slides/slide-03.png" alt="Budget Manager 智慧決策購物車" />
+            </div>
+            <div class="project-entry-copy">
               <div class="project-meta">
                 <span>智慧購物車</span>
                 <span>LLM / Semantic Mapping</span>
@@ -838,59 +930,23 @@
               </div>
               <h3>Budget Manager 智慧決策購物車</h3>
               <p>
-                此專案回應資訊爆炸下的購買決策複雜度，目標是降低購物車被放棄的比例，協助使用者找出最佳購買策略。
+                從購物車放棄率、促銷規則複雜度與商用決策支援角度出發，設計能理解需求、整理限制並輸出購買策略的商業型系統。
               </p>
               <ul class="bullet-list">
-                <li>主要負責：語意 mapping、intent 設計、decision flow 設計與 LLM integration。</li>
-                <li>系統邏輯：包含使用者查詢、semantic understanding、intent / product category、規則邏輯與 recommendation output。</li>
-                <li>規則層：涵蓋預算限制、促銷規則與付款最佳化。</li>
-                <li>專案成果：包含 114 年新竹青春靚點子學生創業競賽佳作，以及 2025 Meet Taipei 發表。</li>
+                <li>聚焦語意理解、預算與促銷規則整合，也對應商用購物流程最佳化。</li>
+                <li>展現我把商業痛點轉成產品邏輯與系統設計的能力。</li>
               </ul>
             </div>
-            <div class="project-visual">
-              <div class="project-carousel" data-carousel>
-                <button class="project-carousel-button prev" type="button" aria-label="查看上一張圖片">&#8249;</button>
-                <div class="project-carousel-track">
-                  <figure class="project-slide">
-                    <img src="assets/slides/slide-03.png" alt="Budget Manager 專案介紹頁" />
-                    <figcaption>專案背景、系統設計與成果總覽</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/slide-04.png" alt="Budget Manager 原始簡報頁面 4" />
-                    <figcaption>Budget Manager 系統簡介 1</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/slide-05.png" alt="Budget Manager 原始簡報頁面 5" />
-                    <figcaption>Budget Manager 系統簡介 2</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/slide-06.png" alt="Budget Manager 原始簡報頁面 6" />
-                    <figcaption>Budget Manager 系統簡介 3</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/slide-09.png" alt="Budget Manager 原始簡報頁面 9" />
-                    <figcaption>Budget Manager 系統簡介 4</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/29.jpg" alt="Budget Manager 原始簡報頁面 9" />
-                    <figcaption>Budget Manager 發表</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/30.jpg" alt="Budget Manager 原始簡報頁面 9" />
-                    <figcaption>Budget Manager 得獎合照</figcaption>
-                  </figure>
-                </div>
-                <button class="project-carousel-button next" type="button" aria-label="查看下一張圖片">&#8250;</button>
-              </div>
-              <div class="project-carousel-footer">
-                <span class="project-carousel-status">1 / 7</span>
-                <div class="project-carousel-dots" aria-label="Budget Manager 圖片導覽"></div>
-              </div>
+            <div class="project-entry-footer">
+              <a class="project-entry-link" href="project-budget-manager.html">進入專案</a>
             </div>
           </article>
 
-          <article class="panel project-card reveal">
-            <div class="project-copy">
+          <article class="project-entry reveal">
+            <div class="project-entry-media">
+              <img src="assets/slides/slide-10.png" alt="集集復集集 數位化第三方集點平台" />
+            </div>
+            <div class="project-entry-copy">
               <div class="project-meta">
                 <span>第三方集點平台</span>
                 <span>B2C / B2B</span>
@@ -898,56 +954,23 @@
               </div>
               <h3>集集復集集 數位化第三方集點平台</h3>
               <p>
-                專案聚焦解決傳統紙本與多 App 集點的管理困難，降低小型攤商數位化門檻，打造集中管理點數的低門檻平台。
+                以低門檻數位化為目標，整合店家端與使用者端的點數流程、客服邏輯與平台串接，對應會員經營、平台服務與商業流程管理。
               </p>
               <ul class="bullet-list">
-                <li>建構使用者端（B2C）與店家端（B2B）雙系統，支援累積、查詢、轉贈、折抵完整點數流程。</li>
-                <li>整合：LineBot、Google Maps API 與 Firebase 即時資料儲存架構。</li>
-                <li>客服邏輯：採 rule-based 與 LLM fallback 混合設計，處理高確定性與模糊查詢。</li>
-                <li>主要負責：系統流程設計、LineBot webhook + 後端整合、API 串接、RESTful API 設計與系統測試。</li>
-                <li>專案成果：包含第 28 屆資訊應用服務創新競賽產學合作組第一名、創新創業競賽佳作、通過 U-Start 大學生計劃，並受邀對外發表(友達光電、台北市電腦公會）。</li>
+                <li>整合 LineBot、Firebase、Google Maps API，具備平台型產品思維。</li>
+                <li>展現系統整合、對外發表與帶隊推進專案的能力。</li>
               </ul>
             </div>
-            <div class="project-visual">
-              <div class="project-carousel" data-carousel>
-                <button class="project-carousel-button prev" type="button" aria-label="查看上一張圖片">&#8249;</button>
-                <div class="project-carousel-track">
-                  <figure class="project-slide">
-                    <img src="assets/slides/slide-10.png" alt="集點平台專案介紹頁" />
-                    <figcaption>平台背景、架構、客服邏輯與成果</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/slide-11.png" alt="集點平台原始簡報頁面 11" />
-                    <figcaption>集點平台補充畫面 1</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/slide-12.png" alt="集點平台原始簡報頁面 12" />
-                    <figcaption>集點平台補充畫面 2</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/26.jpg" alt="集點平台原始簡報頁面 12" />
-                    <figcaption>集點平台專案 發表</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/28.jpg" alt="集點平台原始簡報頁面 12" />
-                    <figcaption>集點平台專案 大專盃資訊競賽得獎</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/27.jpg" alt="集點平台原始簡報頁面 12" />
-                    <figcaption>集點平台專案 創新創業競賽得獎</figcaption>
-                  </figure>
-                </div>
-                <button class="project-carousel-button next" type="button" aria-label="查看下一張圖片">&#8250;</button>
-              </div>
-              <div class="project-carousel-footer">
-                <span class="project-carousel-status">1 / 6</span>
-                <div class="project-carousel-dots" aria-label="集點平台圖片導覽"></div>
-              </div>
+            <div class="project-entry-footer">
+              <a class="project-entry-link" href="project-jijifujiji.html">進入專案</a>
             </div>
           </article>
 
-          <article class="panel project-card reveal">
-            <div class="project-copy">
+          <article class="project-entry reveal">
+            <div class="project-entry-media">
+              <img src="assets/slides/slide-13.png" alt="XR 白內障模擬系統" />
+            </div>
+            <div class="project-entry-copy">
               <div class="project-meta">
                 <span>XR / HCI / HRI</span>
                 <span>Unity / Arduino</span>
@@ -955,41 +978,15 @@
               </div>
               <h3>XR 白內障模擬系統</h3>
               <p>
-                目標是模擬白內障患者在真實環境中的行走體驗，讓使用者更理解導航回饋與沉浸式感知。
+                透過 XR 模擬視覺限制、碰撞感測與多模態回饋，重現白內障患者在真實環境中的移動與導航體驗，展現跨領域整合與互動系統設計能力。
               </p>
               <ul class="bullet-list">
-                <li>系統包含： Unity XR 場景、導盲杖感測、腰部觸覺回饋與音訊提示。</li>
-                <li>系統流程：感測、判斷、回饋的 real-time loop。</li>
-                <li>主要負責：軟硬體整合與 Arduino 開發。</li>
+                <li>重點在軟硬整合、即時回饋、體驗設計與使用者理解。</li>
+                <li>補強我在技術實作之外的人機互動與研究型專案能力。</li>
               </ul>
             </div>
-            <div class="project-visual">
-              <div class="project-carousel" data-carousel>
-                <button class="project-carousel-button prev" type="button" aria-label="查看上一張圖片">&#8249;</button>
-                <div class="project-carousel-track">
-                  <figure class="project-slide">
-                    <img src="assets/slides/slide-13.png" alt="XR 白內障模擬系統頁面 13" />
-                    <figcaption>XR 白內障模擬系統架構與互動流程</figcaption>
-                  </figure>
-                  <figure class="project-slide">
-                    <img src="assets/slides/23.jpg" alt="XR 白內障模擬系統頁面 14" />
-                    <figcaption>XR 穿戴式裝置設計</figcaption>
-                  </figure>
-                   <figure class="project-slide">
-                    <img src="assets/slides/25.jpg" alt="XR 白內障模擬系統頁面 14" />
-                    <figcaption>XR 穿戴式裝置實際上身穿戴狀態</figcaption>
-                  </figure>
-                   <figure class="project-slide">
-                    <img src="assets/slides/24.jpg" alt="XR 白內障模擬系統頁面 14" />
-                    <figcaption>XR 穿戴式專案組員合照</figcaption>
-                  </figure>
-                </div>
-                <button class="project-carousel-button next" type="button" aria-label="查看下一張圖片">&#8250;</button>
-              </div>
-              <div class="project-carousel-footer">
-                <span class="project-carousel-status">1 / 4</span>
-                <div class="project-carousel-dots" aria-label="XR 專案圖片導覽"></div>
-              </div>
+            <div class="project-entry-footer">
+              <a class="project-entry-link" href="project-xr-cataract.html">進入專案</a>
             </div>
           </article>
         </div>
